@@ -1,3 +1,5 @@
 <template>
-  Climb Info Component
+  <div class="">
+    Climb Info Component
+  </div>
 </template>

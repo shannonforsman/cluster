@@ -1,7 +1,10 @@
-import Home from './components/Home.vue';
-import NewClimb from './components/climbs/NewClimb.vue'
+import Home from './components/home/Home.vue';
+import NewClimb from './components/climbs/NewClimb.vue';
+import ClimbInfo from './components/climbs/ClimbInfo.vue';
 
 export const routes = [
-  { path: '/', component: Home },
-  { path: '/new', component: NewClimb }
+  { path: '/', redirect: '/climbs'},
+  { path: '/climbs', component: Home },
+  { path: '/climbs/new', component: NewClimb },
+  { path: '/climbs/:id', component: ClimbInfo }
 ]

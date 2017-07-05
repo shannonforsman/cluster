@@ -1,21 +1,19 @@
 <template>
     <div class="container">
-      <app-header></app-header>
       <router-view></router-view>
       <climb-map></climb-map>
     </div>
 </template>
 
 <script>
-  import Header from './components/Header.vue';
-  import Map from './components/Map.vue'
+  import Home from './components/home/Home.vue';
+  import Map from './components/map/Map.vue'
 
   export default {
     components: {
-      appHeader: Header,
+      appHome: Home,
       climbMap: Map
     }
-
   }
 </script>
 
